@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html  >
+<head>
+
+	<!-- ##############################################################################	 -->
+
+  	<!-- Site made with Mobirise Website Builder v5.2.0, https://mobirise.com -->
+
+  	<!-- YOU CAN GETs this at https://github.com/nikhilbharadwaj005/HtmlFormUsingGoogle.git -->
+
+    <!-- ############################################################################## -->
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v5.2.0, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo5.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Cosmetics GiveAway</title>
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/formstyler/jquery.formstyler.css">
+  <link rel="stylesheet" href="assets/formstyler/jquery.formstyler.theme.css">
+  <link rel="stylesheet" href="assets/datepicker/jquery.datetimepicker.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+  
+</head>
+<body>
+  
+  <section class="header12 cid-sjriUwh79g mbr-parallax-background" id="header12-0">
+
+    
+
+    <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(255, 255, 255);">
+    </div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="card col-12 col-md-12 col-lg-9">
+                <div class="card-wrapper">
+                    <div class="card-box align-center">
+                        <h1 class="card-title mbr-fonts-style mb-3 display-2"><strong>Congratulations !</strong><br><strong>For Unlocking the GIVEAWAY.</strong></h1>
+                        <p class="mbr-text mbr-fonts-style display-7"><strong>Enter Your Details in the Form below to participate in the giveaway.</strong></p>
+                        <div class="mbr-section-btn mt-3">
+                          <section class="form7 cid-sjv60VKJf4">
+    
+    
+    <div class="container">
+        
+        <div class="row justify-content-center mt-4">
+            <div class="col-lg-8 mx-auto mbr-form">
+                <form action="PASTE YOUR ENDPOINT URL HERE" method="POST" class="mbr-form form-with-styler mx-auto" id="idForm">
+                    
+                    <div class="">
+                        <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling
+                            out the form!</div>
+                    </div>
+                    <div class="dragArea row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                            <input type="text" name="name" placeholder="Name" class="form-control" value="" required>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                            <input type="email" name="email" placeholder="Email" data-form-field="email" class="form-control" value="" required>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                            <input type="tel" name="address" placeholder="Address" data-form-field="phone" class="form-control" value="" required>
+                        </div>
+                        <div class="col-auto mbr-section-btn align-center">
+                            <button type="submit" class="btn btn-primary display-4">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;"><a href="https://mobirise.site/o" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;"> <a href="https://mobirise.site/g" style="color:#aaa;"></a> </p></section><script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/popper/popper.min.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/parallax/jarallax.min.js"></script>  <script src="assets/formstyler/jquery.formstyler.js"></script>  <script src="assets/formstyler/jquery.formstyler.min.js"></script>  <script src="assets/datepicker/jquery.datetimepicker.full.js"></script>  <script src="assets/theme/js/script.js"></script>  <script src="assets/formoid/formoid.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+<script type="text/javascript">
+  
+
+  $("#idForm").submit(function(e) {
+
+    e.preventDefault(); // avoid to execute the actual submit of the form.
+
+    var form = $(this);
+    var url = form.attr('action');
+    
+    $.ajax({
+           type: "POST",
+           url: url,
+           data: form.serialize(), // serializes the form's elements.
+           success: function(data)
+           {
+               swal("DONE!", "YOU ARE IN!", "success").then(() => {
+               	
+               	//CODE what should happen after submitting form..
+
+                window.location = "https://google.com";   //After Submitting, user will be redirected to google.com
+                
+               })
+
+           }
+         });
+
+    
+})
+
+</script> 
+  
+  
+</body>
+</html>
